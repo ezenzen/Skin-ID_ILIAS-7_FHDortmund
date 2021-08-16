@@ -1,0 +1,45 @@
+#ilTab {
+    background-color: @il-neutral-color;
+    border-bottom: none;
+    a {
+        color: white;
+    }
+}
+.nav-tabs > li {
+    margin: 0px;
+    > a {
+        padding: 10px 12px 8px;
+    }
+    > a:hover {
+        background-color: @accent-secondary;
+        color: @il-text-color;
+    }
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    background-color:  @accent-secondary;
+    color: @il-text-color !important;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: @accent-secondary;
+    color: @il-text-color !important;
+}
+#ilSubTab {
+    background-color: @accent-secondary;
+    margin: -23px 15px 30px;
+    padding: 5px 5px;
+    font-size: 12px;
+    a {
+        color: @il-text-color;
+    }
+    > li > a:hover {
+        color: @il-text-color;
+    }
+    > li.active > a,
+    > li.active > a:hover,
+    > li.active > a:focus {
+        color: @il-text-color;
+    }
+}

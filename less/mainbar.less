@@ -1,0 +1,36 @@
+.il-mainbar-slates > .il-maincontrols-slate.engaged > .il-maincontrols-slate-content .panel-secondary {
+    .panel-heading.ilHeader {
+        padding: 6px 6px 6px 12px;
+    }
+    .il-std-item-container:first-child {
+        border-top: none;
+    }
+}
+
+//HOVER
+.il-mainbar-triggers {
+    .btn-bulky:focus-visible,
+    .il-link.link-bulky:focus-visible {
+        background-color: white;
+        color: @il-neutral-color;
+        .bulky-label {
+            color: @il-neutral-color;
+        }
+        .icon {
+            filter: invert(50%);
+        }
+    }
+}
+
+//TOOLS
+.il-mainbar-tools-button {
+    .btn-bulky {
+        background-color: @accent-primary;
+        &.engaged {
+            background-color: @il-highlight-bg;
+        }
+    }
+}
+.il-mainbar-tools-entries-bg {
+    background-color: @il-highlight-bg;
+}

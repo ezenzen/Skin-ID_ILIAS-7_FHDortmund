@@ -1,0 +1,78 @@
+//PANEL
+.panel {
+    box-shadow: none;
+    .panel-body {
+        background-color: @il-main-dark-bg;
+    }
+}
+.il-panel-listing-std-container {
+    background-color: white;
+    > h2 {
+        padding: 9px 0;
+    }
+    > h3 {
+        padding: 9px 0;
+    }
+    > .dropdown {
+        padding: 9px 0;
+    }
+}
+.il-item {
+    padding: 12px 0;
+    .il-item-divider {
+        border-bottom: dashed 0.5px @il-main-border-color;
+    }
+}
+.il-std-item-container:not(:last-child) {
+    border-bottom: none !important;
+}
+.il-item-group {
+    background-color: white;
+    > h3 {
+        padding: 9px 0;
+    }
+    > h4 {
+        padding: 9px 0;
+    }
+}
+.il-std-item-container {
+    border-top: 1px solid @il-main-border-color;
+}
+ 
+//SECONDARY PANEL
+.panel-secondary {
+    .panel-heading.ilHeader {
+        padding: 6px;
+    }
+}
+.panel-flex .il-viewcontrol-pagination,
+.panel-flex .il-viewcontrol-section {
+    padding-bottom: 8px;
+    margin: 0px -6px -6px -6px;
+}
+.panel.panel-secondary.panel-flex {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+//DASHBOARD
+.ilDashboardMainContent .panel .panel-heading.ilHeader,
+.ilDashboardMainContent .panel-body {
+    background-color: white !important;
+    padding: 9px 0;
+}
+.ilDashboardMainContent .panel-heading.ilHeader > h2 {
+    font-size: 19px;
+    font-weight: 600;
+    color: @il-text-color !important;
+    line-height: 1.33;
+}
+.ilDashboardMainContent  .panel-heading.ilHeader.clearfix {
+    position: relative;
+}
+.panel .panel-heading.ilHeader,
+.panel .panel-heading.ilBlockHeader {
+    background-color: white;
+}
+
+

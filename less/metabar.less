@@ -1,0 +1,87 @@
+//HEADER
+.header-inner {
+    background-color: @accent-primary;
+    .il-pagetitle {
+        color: white;
+    }
+}
+//LOGO
+.ilias-logo {
+    margin-left: 1px;
+    img {
+        height: 48px;
+        width: auto;
+    }
+}
+.il-logo {
+    margin-left: 65px;
+    position: absolute;
+    margin-top: 3px;
+    img {
+        width: 155px;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .ilias-logo {
+        display: none;
+    }
+    .il-logo {
+        margin-left: 5px;
+        margin-top: 0px;
+        width: 120px !important;
+        position: relative;
+    }
+}
+//METABAR CONTROLS
+.il-maincontrols-metabar .btn-bulky {
+    .glyphicon {
+        color: white;
+        filter: none;
+        &:hover {
+            filter: none;
+        }
+    }
+    &.engaged .glyphicon {
+        filter: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .il-maincontrols-metabar .btn-bulky .glyphicon {
+        color: inherit;
+        filter: inherit;
+    }
+    .il-metabar-more-button .glyph {
+        color: white;
+    }
+}
+.il-counter-novelty {
+    background-color: white;
+    color: @accent-primary;
+}
+
+//PAGETITLE
+.il-pagetitle {
+    padding-left: 15px;
+}
+
+//BREADCRUMBS
+.breadcrumbs .breadcrumb {
+    padding-left: 10px;
+}
+@media only screen and (max-width: 767px) {
+    .il-header-locator {
+        .dropdown-toggle {
+            background-color: transparent !important;
+            color: white !important;
+        }
+        .btn-default:active:hover {
+            background-color: transparent !important;
+            color: white;
+        }
+        .open > .dropdown-toggle.btn-default {
+            background-color: transparent !important;
+            color: white;
+        }
+    }
+}

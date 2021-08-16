@@ -1,0 +1,29 @@
+footer {
+    background-color: @accent-secondary;
+}
+.il-maincontrols-footer {
+    color: @il-text-color;
+    .il-footer-links li a {
+        color: @il-text-color;
+    }
+}
+.il-footer-logo {
+    float: right;
+    margin-top: -11px;
+    img {
+        width: 130px;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 767px) {
+    footer {
+        padding: 5px 0px;
+    }
+    .il-maincontrols-footer {
+        font-size: 1.1rem;
+        padding: 0px 5px;
+    }
+    .il-footer-logo {
+        display: none !important;
+    }
+}
