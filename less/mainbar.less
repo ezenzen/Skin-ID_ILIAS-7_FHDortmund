@@ -2,6 +2,13 @@
     .panel-heading.ilHeader {
         padding: 6px 6px 6px 12px;
     }
+    .il-item-group {
+        background-color: @il-main-dark-bg;
+        > h3 {
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+        }
+    }
     .il-std-item-container:first-child {
         border-top: none;
     }
@@ -33,4 +40,51 @@
 }
 .il-mainbar-tools-entries-bg {
     background-color: @il-highlight-bg;
+}
+.il-maincontrols-slate {
+    #il-tag-slate-container,
+    #ilHelpPanel { 
+        .btn-bulky .bulky-label {
+            margin-top: 1px;
+        }
+    }
+}
+.il-mainbar-tools-entries {
+    .btn-bulky,
+    .il-link.link-bulky {
+        background-color: @accent-primary;
+    }
+}
+
+
+//ONLINE HELP
+.il-maincontrols-slate-content > .ilHighlighted {
+    background-color: @il-main-dark-bg;
+}
+#ilHelpPanel {
+    #il_help_search_form {
+        padding: 5px;
+        margin-top: 5px;
+    }
+    div.ilSideBarHead {
+        padding: 5px 10px;
+    }
+    .ilSideBarContent {
+        padding: 5px 10px !important;
+    }
+    .il_VAccordionInnerContainer {
+        margin-bottom: 2px;
+    }
+    .il_VAccordionHead {
+        line-height: 1.7rem;
+        font-size: 1.5rem;
+        font-weight: inherit;
+        color: @il-text-color;
+        background-color: @il-slate-bulky-bg-color;
+        padding: 15px 10px 15px 30px;
+        background-position: 3px center;
+        &.il_HAccordionHeadActive {
+            background-color: @il-highlight-bg;
+        }
+    }
 }

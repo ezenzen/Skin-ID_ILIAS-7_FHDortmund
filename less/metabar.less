@@ -34,16 +34,22 @@
     }
 }
 //METABAR CONTROLS
-.il-maincontrols-metabar .btn-bulky {
-    .glyphicon {
-        color: white;
-        filter: none;
-        &:hover {
+.il-maincontrols-metabar {
+    .il-metabar-slates {
+        margin-right: 15px;
+    }
+    .btn-bulky {
+        .glyphicon {
+            color: white;
+            filter: none;
+            &:hover {
+                filter: none;
+            }
+        }
+        &.engaged .glyphicon {
+            color: @il-neutral-light-color;
             filter: none;
         }
-    }
-    &.engaged .glyphicon {
-        filter: none;
     }
 }
 @media only screen and (max-width: 767px) {

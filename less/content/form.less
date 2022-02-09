@@ -20,15 +20,23 @@
     background-color: white;
 }
 .form-group {
-    margin: 0px !important;
-    padding: 15px  0px 10px 0px;
     background-color: @il-content-bg;
 }
-.il_InfoScreenPropertyValue {
-    background-color: @il-content-bg;
-    border: 1px solid @il-main-border-color;
-    border-left: 10px solid white;
+.form-horizontal {
+    background-color: @il-main-dark-bg;
+    .help-block {
+        color: @il-text-color;
+    }
 }
-.form-horizontal .help-block {
+
+//INFO SCREEN
+.ilInfoScreenSec.form-horizontal .form-group {
+    background-color: @il-main-dark-bg;
+}
+.il_InfoScreenProperty {
     color: @il-text-color;
+}
+  .il_InfoScreenPropertyValue {
+    background-color: @il-content-bg;
+    border-left: 1px solid @il-main-border-color;
 }
