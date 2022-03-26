@@ -6,7 +6,7 @@
     }
 }
 .il-panel-listing-std-container {
-    background-color: white;
+    background-color: @il-main-bg;
     > h2 {
         padding: 9px 0;
     }
@@ -14,11 +14,11 @@
         padding: 9px 0;
     }
     > .dropdown {
-        padding: 9px 0;
+        padding: 9px 3px 9px 0px;
     }
 }
 .il-item {
-    padding: 12px 0;
+    padding: 12px 3px 12px 0px;
     .il-item-divider {
         border-bottom: dashed 0.5px @il-main-border-color;
     }
@@ -27,7 +27,7 @@
     border-bottom: none !important;
 }
 .il-item-group {
-    background-color: white;
+    background-color: @il-main-bg;
     > h3 {
         padding: 9px 0;
     }
@@ -58,23 +58,29 @@
 }
 
 //DASHBOARD
-.ilDashboardMainContent .panel .panel-heading.ilHeader,
-.ilDashboardMainContent .panel-body {
-    background-color: white !important;
-    padding: 9px 0;
+.ilDashboardMainContent {
+    .panel .panel-heading.ilHeader,
+    .panel-body {
+        background-color: white !important;
+        padding: 9px 3px 9px 0px;
+    }
+    .panel-heading.ilHeader > h2 {
+        font-size: 19px;
+        font-weight: 600;
+        color: @il-text-color !important;
+        line-height: 1.33;
+    }
+    .panel-heading.ilHeader.clearfix {
+        position: relative;
+    }
 }
-.ilDashboardMainContent .panel-heading.ilHeader > h2 {
-    font-size: 19px;
-    font-weight: 600;
-    color: @il-text-color !important;
-    line-height: 1.33;
-}
-.ilDashboardMainContent  .panel-heading.ilHeader.clearfix {
-    position: relative;
-}
-.panel .panel-heading.ilHeader,
-.panel .panel-heading.ilBlockHeader {
-    background-color: white;
+.panel {
+    .panel-heading {
+        &.ilHeader,
+        &.ilBlockHeader {
+            background-color: @il-main-bg;
+        }
+    }
 }
 
 

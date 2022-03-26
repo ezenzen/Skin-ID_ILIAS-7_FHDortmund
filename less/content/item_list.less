@@ -1,9 +1,9 @@
 .ilContainerBlockHeader {
     background-color: white;
-    padding: 9px 0;
+    padding:  9px 3px 9px 0px;
 }
 div.ilContainerListItemOuter {
-    padding: 15px 0;
+    padding: 15px 3px 15px 0px;
 }
 .ilObjListRow {
     border-top: 1px solid @il-main-border-color;
@@ -14,4 +14,22 @@ div.ilContainerListItemOuter {
 //PRECONDITION
 div.ilPreconditionItem {
     margin: 0;
+}
+
+//ITEM LIST
+.ilContainerBlockHeaderExpanded,
+.ilContainerBlockHeaderCollapsed {
+    padding-left: 45px !important;
+    background-color: @il-main-dark-bg !important;
+    &:hover, 
+    &:active, 
+    &:focus {
+        background-color: @il-highlight-bg !important;
+    }
+    .ilContainerBlockHeader {
+        background-color: transparent !important;
+    }
+}
+.ilContainerBlockHeaderExpanded {
+    background-color: @il-highlight-bg !important;
 }

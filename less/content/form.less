@@ -1,12 +1,14 @@
 //KS FORMS
-.il-standard-form .il-standard-form-header,
-.il-standard-form .il-standard-form-footer,
-.il-standard-form .il-section-input-header {
-    background-color: white;
-    color: @il-text-color;
-    > h2 {
-        margin-top: 20px;
-        margin-bottom: 5px;
+.il-standard-form {
+    .il-standard-form-header,
+    .il-standard-form-footer,
+    .il-section-input-header {
+        background-color: white;
+        color: @il-text-color;
+        > h2 {
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
     }
 }
 
@@ -27,6 +29,9 @@
     .help-block {
         color: @il-text-color;
     }
+    .form-group tr.std {
+        background: @il-main-dark-bg;
+      }
 }
 
 //INFO SCREEN
@@ -35,8 +40,10 @@
 }
 .il_InfoScreenProperty {
     color: @il-text-color;
+    border-right: 1px solid @il-main-border-color;
 }
   .il_InfoScreenPropertyValue {
     background-color: @il-content-bg;
     border-left: 1px solid @il-main-border-color;
+    margin-left: -1px;
 }

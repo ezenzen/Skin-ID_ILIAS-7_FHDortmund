@@ -3,8 +3,26 @@ footer {
 }
 .il-maincontrols-footer {
     color: @il-text-color;
-    .il-footer-links li a {
-        color: @il-text-color;
+    .il-footer-links {
+        li {
+            a {
+                color: @il-link-color;
+            }
+            button {
+                color: white;
+                background-color: @il-main-color;
+                padding: 3px 8px;
+                &:hover,
+                &:active,
+                &:focus {
+                    text-decoration: none !important;
+                    background-color: darken(@il-main-color,10%);
+                }
+                &:focus-visible {
+                    outline-offset: 2px;
+                }
+            }
+        }
     }
 }
 .il-footer-logo {
