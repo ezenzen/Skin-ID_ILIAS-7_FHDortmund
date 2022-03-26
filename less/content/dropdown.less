@@ -1,22 +1,38 @@
-.btn.btn-default.dropdown-toggle {
-    background-color: transparent;
-    border-color: @accent-primary;
-    color: @accent-primary;
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: @accent-primary;
+.btn.btn-default {
+    &.dropdown-toggle {
+        background-color: transparent;
         border-color: @accent-primary;
-        color: white;
+        color: @accent-primary;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: @accent-primary;
+            border-color: @accent-primary;
+            color: white;
+        }
+    }
+    &.btn-split.dropdown-toggle {
+        background-color: transparent;
+        border-color: @il-main-color;
+        color: @il-main-color;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color:  @il-main-color;
+            border-color:  @il-main-color;
+            color: white;
+        }
     }
 }
-.panel .panel-heading.ilHeader .dropdown > button.dropdown-toggle,
-.panel .panel-heading.ilBlockHeader .dropdown > button.dropdown-toggle {
-    color: @accent-primary;
-    &:hover,
-    &:focus,
-    &:active {
-        color: white;
+.panel .panel-heading {
+    &.ilHeader .dropdown > button.dropdown-toggle,
+    &.ilBlockHeader .dropdown > button.dropdown-toggle {
+        color: @accent-primary;
+        &:hover,
+        &:focus,
+        &:active {
+            color: white;
+        }
     }
 }
 .panel.panel-secondary.panel-flex .il-viewcontrol-section a {

@@ -19545,6 +19545,18 @@ div.ilCalSelList h6 {
   border-color: #EC661C;
   color: white;
 }
+.btn.btn-default.btn-split.dropdown-toggle {
+  background-color: transparent;
+  border-color: #4c6586;
+  color: #4c6586;
+}
+.btn.btn-default.btn-split.dropdown-toggle:hover,
+.btn.btn-default.btn-split.dropdown-toggle:focus,
+.btn.btn-default.btn-split.dropdown-toggle:active {
+  background-color: #4c6586;
+  border-color: #4c6586;
+  color: white;
+}
 .panel .panel-heading.ilHeader .dropdown > button.dropdown-toggle,
 .panel .panel-heading.ilBlockHeader .dropdown > button.dropdown-toggle {
   color: #EC661C;
@@ -19662,6 +19674,7 @@ div.ilPreconditionItem {
 }
 .ilContainerBlockHeaderExpanded,
 .ilContainerBlockHeaderCollapsed {
+  padding-top: 6px !important;
   padding-left: 45px !important;
   background-color: #f9f9f9 !important;
 }
