@@ -19302,6 +19302,13 @@ footer {
 .il-maincontrols-footer {
   color: #434343;
 }
+.il-maincontrols-footer .il-footer-content {
+  margin-left: 130px;
+  margin-right: 130px;
+}
+.il-maincontrols-footer .il-footer-permanent-url {
+  padding-top: 8px;
+}
 .il-maincontrols-footer .il-footer-links li a {
   color: #4c6586;
 }
@@ -19321,7 +19328,8 @@ footer {
 }
 .il-footer-logo {
   float: right;
-  margin-top: -11px;
+  padding: 0px 10px;
+  margin-top: -30px;
 }
 .il-footer-logo img {
   width: 130px;
@@ -19334,6 +19342,13 @@ footer {
   .il-maincontrols-footer {
     font-size: 1.1rem;
     padding: 0px 5px;
+  }
+  .il-maincontrols-footer .il-footer-content {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .il-maincontrols-footer .il-footer-permanent-url {
+    padding-top: inherit;
   }
   .il-footer-logo {
     display: none !important;
@@ -19529,6 +19544,9 @@ div.ilCalSelList h6 {
 }
 .il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button {
   color: white;
+}
+.ilContainerTileRows {
+  border-top: 1px solid #dddddd;
 }
 .il_info.il-multi-line-cap-3 {
   white-space: break-spaces;
