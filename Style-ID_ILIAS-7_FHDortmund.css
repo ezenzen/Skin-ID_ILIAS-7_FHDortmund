@@ -19484,18 +19484,22 @@ footer {
 .il-maincontrols-metabar .il-metabar-slates {
   margin-right: 15px;
 }
-.il-maincontrols-metabar .btn-bulky .glyphicon {
+.il-maincontrols-metabar .btn-bulky .glyphicon,
+.il-maincontrols-metabar .link-bulky .glyphicon {
   color: white;
   filter: none;
 }
-.il-maincontrols-metabar .btn-bulky .glyphicon:hover {
+.il-maincontrols-metabar .btn-bulky .glyphicon:hover,
+.il-maincontrols-metabar .link-bulky .glyphicon:hover {
   filter: none;
 }
-.il-maincontrols-metabar .btn-bulky.engaged .glyphicon {
+.il-maincontrols-metabar .btn-bulky.engaged .glyphicon,
+.il-maincontrols-metabar .link-bulky.engaged .glyphicon {
   color: #757575;
   filter: none;
 }
-.il-maincontrols-metabar .btn-bulky.engaged .il-counter-novelty {
+.il-maincontrols-metabar .btn-bulky.engaged .il-counter-novelty,
+.il-maincontrols-metabar .link-bulky.engaged .il-counter-novelty {
   background-color: #EC661C;
   color: white;
 }
