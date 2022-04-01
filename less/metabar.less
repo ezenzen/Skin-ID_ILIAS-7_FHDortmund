@@ -64,9 +64,18 @@
 .il-maincontrols-metabar {
     .il-metabar-slates {
         margin-right: 15px;
+        .il-maincontrols-slate {
+            .btn-bulky,
+            .link-bulky {
+                .icon,
+                .glyphicon {
+                    filter: invert(50%);
+                }
+            }
+        }
     }
-    .btn-bulky,
-    .link-bulky {
+    > li > .btn-bulky,
+    > li >.link-bulky {
         .glyphicon {
             color: white;
             filter: none;
@@ -104,6 +113,7 @@
     background-color: white;
     color: @accent-primary;
 }
+
 //NOTIFICATION CENTER
 .il-notification-item {
     padding: 12px !important;
